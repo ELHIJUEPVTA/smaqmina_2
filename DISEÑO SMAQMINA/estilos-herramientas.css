@@ -137,23 +137,6 @@ padding: 12px;
 }
 
 /* MODOS */
-.dark-mode {
-    background: black !important;
-    color: var(--blanco);
-}
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode p,
-.dark-mode a {
-    color: var(--blanco);
-}
-
-
-
-.mayusculas{
-    text-transform: uppercase;
-}
 
 .grid-container { /* mobile */
     display: grid; 
@@ -303,6 +286,24 @@ padding: 12px;
             / auto 50%; /* definir ancho de columnas */
     }
 }
+.dark-mode {
+    background: black !important;
+    color: var(--blanco);
+}
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode a {
+    color: var(--blanco);
+}
+
+
+
+.mayusculas{
+    text-transform: uppercase;
+}
+
 
 
 
