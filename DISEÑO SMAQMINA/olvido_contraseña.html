@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>¿Olvidó su contraseña? - SMAQMINA</title>
+    <link rel="stylesheet" href="estilos-index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+</head>
+
+<body>
+
+<a href="index.html" class="btn-volver">← Volver</a>
+
+<header class="topbar">
+   <div class="logo-area">
+        <img src="imagenes/logo SMAQMINA.png" alt="Logo">
+        <span class="titulo">
+            SMAQMINA (SISTEMA DE MANTENIMIENTO E INVENTARIO)
+        </span>
+    </div>
+</header>
+
+<div class="fondo"></div>
+
+<main class="login-container">
+    <div class="login-box">
+
+        <h1>¿Olvidó su contraseña?</h1>
+        <p>Ingrese sus datos para restablecerla</p>
+
+        <!--  Alerta -->
+        <div id="alertaReset" class="alert-error"></div>
+
+        <!--  Formulario -->
+        <form id="formReset">
+
+            <!-- Correo -->
+            <div class="input-group">
+                <input type="email" id="correoInput" required placeholder="Correo electrónico">
+            </div>
+
+            <!-- Botón enviar código -->
+            <button type="button" id="btnEnviarCodigo" class="btn-codigo">
+                📩 Enviar código al correo
+            </button>
+
+            <!-- Código -->
+            <div class="input-group">
+                <input type="number" id="codigoInput" required placeholder="Ingrese el código recibido">
+            </div>
+
+            <!-- Nueva contraseña -->
+            <div class="input-group">
+                <input type="password" id="pass1" required placeholder="Nueva contraseña">
+                <span class="btn-ver" id="verPass1">👁</span>
+            </div>
+
+            <!-- Confirmar contraseña -->
+            <div class="input-group">
+                <input type="password" id="pass2" required placeholder="Confirmar contraseña">
+                <span class="btn-ver" id="verPass2">👁</span>
+            </div>
+
+            <!-- Botón final -->
+            <button type="submit" class="btn-login">
+                Restablecer contraseña
+            </button>
+
+        </form>
+
+        <p class="ayuda">
+            <a href="crear_cuenta.html">Crear cuenta</a>
+        </p>
+
+
+
+        <footer class="footer-box">
+            © 2025 SMAQMINA. Todos los derechos reservados.
+        </footer>
+                           <div class="accesibilidad">
+    <button id="botonAccesibilidad">⚙️</button> 
+    <div id="menuAccesibilidad" class="menu-accesibilidad">
+        <button onclick="toggleOscuro()"> Modo oscuro</button>
+        <button onclick="mayusculas()"> Mayúsculas</button>
+        <button onclick="resetEstilos()"> Restaurar</button>     
+        <button onclick="leerPagina()"> Leer Pagina</button>
+        <button onclick="detenerLectura()"> Detener Lectura</button>
+    </div>
+    </div>
+</main>
+
+<script src="scrips_recupera.js"></script>
+</body>
+</html>

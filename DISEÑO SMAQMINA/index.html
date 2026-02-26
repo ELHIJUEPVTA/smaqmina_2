@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de Sesión - SMAQMINA</title>
+    <link rel="stylesheet" href="estilos-index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        /* Estilos para las alertas sin modificar tu diseño original */
+        .alert-error {
+            display: none;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .input-group { position: relative; }
+        .btn-ver {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<a href="inicio.html" class="btn-volver">← Volver</a>
+
+<header class="topbar">
+   <div class="logo-area">
+        <img src="imagenes/logo SMAQMINA.png" alt="Logo">
+        <span class="titulo">SMAQMINA (SISTEMA DE MANTENIMIENTO E INVENTARIO)</span>
+    </div>
+</header>
+
+<div class="fondo"></div>
+
+<main class="login-container">
+    <div class="login-box">
+        <h1>¡Bienvenido!</h1>
+        <p>Inicia sesión para acceder al sistema</p>
+
+        <div id="alertaSesion" class="alert-error"></div>
+
+        <form id="formLogin">
+            <div class="input-group">
+                <span class="icon"></span>
+                <input type="text" id="userInput" placeholder="Usuario">
+            </div>
+
+            <div class="input-group">
+                <span class="icon"></span>
+                <input type="password" id="passInput" placeholder="Contraseña">
+                <span id="btnVerPass" class="btn-ver">👁</span>
+            </div>
+
+            <div class="opciones">
+                <label>
+                    <input type="checkbox" id="checkRecordar"> Recuérdame
+                </label>
+                <a href="olvido_contraseña.html">Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit" class="btn-login">Iniciar sesión</button>
+        </form>
+
+        <p class="ayuda">
+         <a href="crear_cuenta.html">crear cuenta</a>
+        </p>
+                    <div class="accesibilidad">
+    <button id="botonAccesibilidad">⚙️</button>
+
+    <div id="menuAccesibilidad" class="menu-accesibilidad">
+        <button onclick="toggleOscuro()"> Modo oscuro</button>
+        <button onclick="mayusculas()"> Mayúsculas</button>
+        <button onclick="resetEstilos()"> Restaurar</button>     
+        <button onclick="leerPagina()"> Leer Pagina</button>
+        <button onclick="detenerLectura()"> Detener Lectura</button>
+    </div>
+    </div>
+        <footer class="footer-box">
+            © 2026 SMAQMINA. Todos los derechos reservados.
+        </footer>
+    </div>
+</main>
+<script src="scripts_index.js"></script>
+</body>
+</html>
+
+
